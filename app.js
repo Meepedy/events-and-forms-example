@@ -134,7 +134,7 @@ Person.prototype.render = function() {
 
 function createTableRow(event){
   //Prevent default wasn't mentioned about but is something to know. it prevents the default behavior, form submission refreshes the page by default.
-  event.preventDefault;
+  event.preventDefault();
 
   //create a new person object by passing in the values from our text input
   var newPerson = new Person(firstName.value, middleName.value, lastName.value);
