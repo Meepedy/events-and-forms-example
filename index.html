@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Class 13 Demo</title>
+</head>
+<body>
+  <h3>Click the various buttons and input text into the form then look at the console to see what happens.</h3>
+  <hr>
+  <p>This button tells you it was clicked.</p>
+  <button id="btn1">Button 1</button>
+  <button id="btn2">Button 2</button>
+  <hr>
+  <p>These buttons all have the same event listener.</p>
+  <button class="buttons">Button 3</button>
+  <button class="buttons">Button 4</button>
+  <hr>
+  <p>Watch the console as you type into these forms</p>
+  <form action="#">
+    <input type="text" id="input1">
+  <hr>
+    <p>This check box tells you if it is checked or not in the console.</p>
+    <input type="checkbox" id="check1">
+  <hr>
+    <p>This drop down will tell use what is currently selected in the console.</p>
+    <select id="drop1">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+      <option value="Option 3">Option 3</option>
+    </select>
+  </form>
+  <hr>
+  <p>This button is here as an example of a shortcut that can be found in the javascript</p>
+  <button id="btn5">Button 5</button>
+  <hr>
+  <p>Everything put together into a nice little package.</p>
+  <form id="nameForm">
+    <!--Out inputs for inside a form tag to group them together-->
+    <input id="first" type="text" placeholder="First Name">
+    <input id="middle" type="text" placeholder="Middle Name">
+    <input id="last" type="text" placeholder="Last Name">
+    <!--Input type submit creates a submit button that we can utilize with a submit event on our form-->
+    <input type="submit">
+  </form>
+  <table>
+    <tr>
+      <th>First</th>
+      <th>Middle</th>
+      <th>Last</th>
+    </tr>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>
