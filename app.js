@@ -123,9 +123,10 @@ function Person(first, middle, last){
 Person.prototype.render = function() {
   //Cool fact, Object.keys() converts your properties into an array.
   var tr = document.createElement('tr');
-  var names = Object.keys(this);
+  var names = Object.values(this);
   for(var i = 0; i < names.length; i++){
     var td = document.createElement('td');
+    console.log(names);
     td.textContent = names[i];
     tr.appendChild(td);
   };
