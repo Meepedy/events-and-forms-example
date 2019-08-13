@@ -7,7 +7,7 @@ var button2 = document.getElementById('btn2');
 //In order to utilize these events we have to add an event listener, whose job is to listen for these events happening.
 
 //Here we add an event listener who listens for a click event on our button1 and runs iWasClicked.
-//Make sure not to put () after iWasClicked otherwise it will execute when the page loads and not when a button is clicked.
+//Make sure not to put () after iWasClicked otherwise it will execute immediately when the page loads and not when a button is clicked.
 button1.addEventListener('click', iWasClicked);
 
 function iWasClicked(){
@@ -18,11 +18,11 @@ function iWasClicked(){
 button2.addEventListener('click', whoWasClicked);
 
 //When an event listener calls a function it automatically passes in an event object with all kinds of info about what happened.
-//using event.toElement we can get the element that was clicked, the .id tells us the id of that element.
+//using event.target we can get the element that was clicked, the .id tells us the id of that element.
 function whoWasClicked(event) {
-  console.log(event.toElement.id + ' was clicked');
+  console.log(event.target.id + ' was clicked');
 
-  //a shortcut instead of event.toElement is to just put this, this refers to the element in the context of our event
+  //a shortcut instead of event.target is to just put this, this refers to the element in the context of our event
   console.log(this.id + " was clicked");
 }
 
